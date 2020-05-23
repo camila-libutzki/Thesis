@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3FF118C-77C5-4A64-B844-A75C0C3BFD28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SiABi.My.MyApplication</StartupObject>
+    <RootNamespace>SiABi</RootNamespace>
+    <AssemblyName>SiABi</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Facu\Desktop\SiABi - Sistema de Asistencia Biométrico\SiABi - Instalador\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SiABi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SiABi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>huella byn ok.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DD40B8CDBE175AAAC7E3B1A627CFEC301CF66E13</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SiABi_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.12.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.12\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.5.12.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.pdfa.5.5.12\lib\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarFotoPersona.Designer.vb">
+      <DependentUpon>AgregarFotoPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarFotoPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPerfilUsuario.Designer.vb">
+      <DependentUpon>AgregarPerfilUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPerfilUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaAula.Designer.vb">
+      <DependentUpon>AltaAula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaAula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaCatedraComision.Designer.vb">
+      <DependentUpon>AltaCatedraComision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaCatedraComision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaPersona.Designer.vb">
+      <DependentUpon>AltaPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaUsuario.Designer.vb">
+      <DependentUpon>AltaUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnos.Designer.vb">
+      <DependentUpon>Alumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Asistencias.Designer.vb">
+      <DependentUpon>Asistencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistenciasAlumno.Designer.vb">
+      <DependentUpon>AsistenciasAlumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsistenciasAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistenciasProfesor.Designer.vb">
+      <DependentUpon>AsistenciasProfesor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsistenciasProfesor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aulas.Designer.vb">
+      <DependentUpon>Aulas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aulas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarBD.Designer.vb">
+      <DependentUpon>CambiarBD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarBD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPerfil.Designer.vb">
+      <DependentUpon>CambiarPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feriados.Designer.vb">
+      <DependentUpon>Feriados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Feriados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion.Designer.vb">
+      <DependentUpon>Informacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz.Designer.vb">
+      <DependentUpon>Interfaz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAsistencia.Designer.vb">
+      <DependentUpon>ModificarAsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAsistenciaProfe.Designer.vb">
+      <DependentUpon>ModificarAsistenciaProfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAsistenciaProfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPersona.Designer.vb">
+      <DependentUpon>ModificarPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrestarAula.Designer.vb">
+      <DependentUpon>PrestarAula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrestarAula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimerInicio.Designer.vb">
+      <DependentUpon>PrimerInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrimerInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesores.Designer.vb">
+      <DependentUpon>Profesores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simular.Designer.vb">
+      <DependentUpon>Simular.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Simular.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashscreen.Designer.vb">
+      <DependentUpon>Splashscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splashscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tolerancia.Designer.vb">
+      <DependentUpon>Tolerancia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tolerancia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.vb">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerMasAlumno.Designer.vb">
+      <DependentUpon>VerMasAlumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerMasAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerMasAula.Designer.vb">
+      <DependentUpon>VerMasAula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerMasAula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerMasProfesor.Designer.vb">
+      <DependentUpon>VerMasProfesor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerMasProfesor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerMasUsuario.Designer.vb">
+      <DependentUpon>VerMasUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerMasUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AgregarFotoPersona.resx">
+      <DependentUpon>AgregarFotoPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPerfilUsuario.resx">
+      <DependentUpon>AgregarPerfilUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaAula.resx">
+      <DependentUpon>AltaAula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaCatedraComision.resx">
+      <DependentUpon>AltaCatedraComision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaPersona.resx">
+      <DependentUpon>AltaPersona.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaUsuario.resx">
+      <DependentUpon>AltaUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumnos.resx">
+      <DependentUpon>Alumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asistencias.resx">
+      <DependentUpon>Asistencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistenciasAlumno.resx">
+      <DependentUpon>AsistenciasAlumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistenciasProfesor.resx">
+      <DependentUpon>AsistenciasProfesor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aulas.resx">
+      <DependentUpon>Aulas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarBD.resx">
+      <DependentUpon>CambiarBD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarPerfil.resx">
+      <DependentUpon>CambiarPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feriados.resx">
+      <DependentUpon>Feriados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion.resx">
+      <DependentUpon>Informacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz.resx">
+      <DependentUpon>Interfaz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAsistencia.resx">
+      <DependentUpon>ModificarAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAsistenciaProfe.resx">
+      <DependentUpon>ModificarAsistenciaProfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPersona.resx">
+      <DependentUpon>ModificarPersona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrestarAula.resx">
+      <DependentUpon>PrestarAula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimerInicio.resx">
+      <DependentUpon>PrimerInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesores.resx">
+      <DependentUpon>Profesores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simular.resx">
+      <DependentUpon>Simular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splashscreen.resx">
+      <DependentUpon>Splashscreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tolerancia.resx">
+      <DependentUpon>Tolerancia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerMasAlumno.resx">
+      <DependentUpon>VerMasAlumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerMasAula.resx">
+      <DependentUpon>VerMasAula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerMasProfesor.resx">
+      <DependentUpon>VerMasProfesor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerMasUsuario.resx">
+      <DependentUpon>VerMasUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SiABi_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="huella byn ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServerDB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Lenovo-F\SQLEXPRESSLENOVO</Value>
+    </Setting>
+    <Setting Name="UserDB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">siabiadmin</Value>
+    </Setting>
+    <Setting Name="PassDB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">siabi2017</Value>
+    </Setting>
+    <Setting Name="DatabaseDB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">siabiDB</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
